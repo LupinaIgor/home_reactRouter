@@ -11,6 +11,8 @@ import ContactsPage from "./pages/ContactsPage";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import NotFoundPage from "./pages/NotFoundPage";
+import CarsPage from "./pages/CarsPage";
+import CarModelPage from "./pages/CarModelPage";
 
 
 class App extends Component {
@@ -22,6 +24,9 @@ class App extends Component {
             <Route path="/" element={<MainLayout />}>
                 <Route index element={<HomePage />}/>
                 <Route path="/about" element={<AboutPage />}/>
+                <Route path="/cars" element={<CarsPage />}/>
+                    {/*<Route path="cars/:car_slug" element={<CarModelPage />} />*/}
+                    <Route path="cars/:seo_text/:car_slug" element={<CarModelPage />} />
                 <Route path="/contacts" element={<ContactsPage />}/>
                 <Route path="*" element={<NotFoundPage />} />
             </Route>
