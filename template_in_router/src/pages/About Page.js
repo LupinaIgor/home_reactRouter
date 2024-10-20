@@ -1,13 +1,14 @@
 import ipad from './../assets/img/ipad.png'
+import {usePageContext} from "../context/PageContext";
 // import MyBreadcrumb from "../layouts/MyBreadcrumb";
 // import {usePageContext} from "../context/PageContext";
 
-export default function AboutPage () {
+export default function AboutPage (props) {
 
-    // props.setByPropsPageName(' About Write in PageComponent  ')
-    //
-    // const { setByContextPageName } = usePageContext();
-    // setByContextPageName('About by Context from Component');
+    props.setByPropsPageName(' About ')
+
+    const { setByContextPageName } = usePageContext();
+    setByContextPageName('About by Context from Component');
 
     return(
         // <>

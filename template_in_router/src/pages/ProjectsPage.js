@@ -1,14 +1,14 @@
 import bgMasthead from './../assets/img/bg-masthead.jpg'
 import demoImg1  from './../assets/img/demo-image-01.jpg'
 import demoImg2  from './../assets/img/demo-image-02.jpg'
-// import {usePageContext} from "../context/PageContext";
+import {usePageContext} from "../context/PageContext";
 
-export default function ProjectsPage () {
+export default function ProjectsPage (props) {
 
-    // props.setByPropsPageName (' Projects ')
-    //
-    // const { setByContextPageName } = usePageContext();
-    // setByContextPageName('Projects by Context from Component');
+    props.setByPropsPageName (' Projects ')
+
+    const { setByContextPageName } = usePageContext();
+    setByContextPageName('Projects by Context from Component');
 
     return(
         // <>
