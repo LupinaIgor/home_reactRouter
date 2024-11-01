@@ -11,7 +11,7 @@ export default function CarVendorsPage () {
     const {carVendors, getDataFromServer} = useCarsContext();
 
     return(
-        <section className="cars-section text-center" id="carsVendors">
+        <section className="cars-section text-center">
             <div className="container px-4 px-lg-5">
                 <h1> Cars Vendors </h1>
 
